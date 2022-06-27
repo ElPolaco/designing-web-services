@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/5b29340897.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="plotno">
+       <canvas id="kanwa">
+
+       </canvas>
+   </div>
+   <div class="tools">
+       <label for="size"> Rozmiar pędzla:</label>
+       <input type="number" id="size" min="1" max="100" value="10">
+       <button id="clear">Wyczyść</button>
+       <label for="kolor">Wybierz kolor:</label>
+       <input type="color" id="kolor">
+      <label for="shape">Wybierz kształt pędzla:</label>
+       <select  id="shape">
+           <option value="kolo">Koło</option>
+           <option value="kwadrat" >Kwadrat</option>
+       </select>
+       <input type="checkbox" id="erase" class="checkBtn"> <label for="erase" title="Gumka"><i class="fas fa-eraser"></i></label>
+       <input type="checkbox" id="fillcolor" class="checkBtn"> <label for="fillcolor" title="Wypełnij płótno kolorem"><i class="fas fa-fill-drip"></i></label>
+       <input type="checkbox" id="write" class="checkBtn"> <label for="write" title="Dodaj tekst"><i class="fas fa-font"></i></label>
+        <button id="download">Pobierz</button>
+   </div>
+    <p id="dsc"></p>
+    <script type="text/javascript" src="./js/logic.js"></script>
+</body>
+</html>

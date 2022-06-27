@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#eeeeee;
+}
+
+.main
+{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.playground
+{
+    background-color: #ffffff;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#legend
+{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+}
+
+@media screen and (orientation: landscape)
+{
+    .playground
+    {
+        width: 80vh;                           
+        height: calc(80vh * 0.75);
+    }
+}
+
+@media screen and (orientation: portrait)
+{
+    .playground
+    {
+        width: 80vw;                          
+        height: calc(80vw * 0.75);
+    }
+}
